@@ -19,7 +19,7 @@ class OwnerView(View):
         )
         dog = Dog.objects.create(
             owner = owner,
-            name = data['name'],
-            age = data['age']
+            name = data['dog'],
+            age = data['dogage']
         )
         return JsonResponse({'message':'created'}, status = 201)
